@@ -43,9 +43,12 @@ public class jFrame extends JFrame implements MouseListener {
 
         Piece currentlyClickedPiece = board.getBoard()[current_row][current_col];
 
-        // Let the turn play out:
+        // Let the turn play out
         board.playTurn(current_row, current_col);
-
+        // Comment to play against local opponent
+        if (!Chess.getInstance().getTurn()) {
+            Chess.getInstance().getAI().playMove();
+        }
 
     }
 

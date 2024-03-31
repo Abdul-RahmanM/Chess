@@ -22,7 +22,7 @@ public class Bishop extends Piece {
         int y = getYPos();
         int count = 0;
         // TODO: Method to get moves
-        // Bottom Right (x goes up) (y goes up)
+            // Bottom Right (x goes up) (y goes up)
         for (int i = x+1; i < 8; i++) {
             count += 1;
             if (onBoard(count + y)) {

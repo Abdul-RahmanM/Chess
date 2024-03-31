@@ -401,10 +401,8 @@ public class Chessboard {
             }
             // Normal movement of piece
             else if (isSelected()) {
-
                 movePiece(x, y);
             }
-            // Chess.getInstance().getAI().playMove();
 
 
         } else {
